@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>AKN Bojonegoro</title>
+</head>
+
+<body>
+    <h1>Javascript Can Change Images</h1>
+    <img id="myImage" onclick="changeImage()" src="https://images.app.goo.gl/46nUFXevr4sReSSM6" width="300"
+        height="180">
+    <p>Click the image to change image.</p>
+    <script>
+        function changeImage() {
+            var image = document.getElementById('myImage')
+            if (image.src.match("bulbon")) {
+                image.src = "https://images.app.goo.gl/46nUFXevr4sReSSM6";
+            } else {
+                image.src = "https://images.app.goo.gl/JGTQRZbKXHeYgsaw7"
+            }
+        } 
+    </script>
+     
+</body>
+
+</html>
